@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import assets
-	import '@fontsource/geist-sans';
-	import '@fontsource/geist-mono @fontsource/geist-sans';
+	// import '@fontsource-variable/geist';
+	// import '@fontsource-variable/geist-mono';
 
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';

@@ -1,4 +1,23 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"hello_world": "Hello, {name} from en!",
+	"hero_title": "Löscher Gardinen",
+	"hero_description": "Since 1960 active in the textile industry",
+	"about_title": "About us",
+	"about_desciption": "Solid pricing, reliable delivery and a diverse collection brought the company Löscher not only to the market leader in Austria, but even the international award \"international Trophy for Technologie\".",
+	"history_1991_title": "A new generation takes over.",
+	"history_1991_description": "With the entry of Junior-Chef Günter Löscher in 1991, the export to the neighboring countries also began to increase. Löscher Gardinen are now exported worldwide and the program has been expanded through innovation, challenge and creativity.",
+	"history_1997_title": "The first step abroad.",
+	"history_1997_description": "In 1997, the Augsburger Gardinenfabrik Herzog was taken over. This strengthened us in the German market and our production in Jaquard was increased by several times.",
+	"history_1998_title": "Own printing production.",
+	"history_1998_description": "Acquisition of the company Faber in Vienna, own printing production.",
+	"history_2008_title": "A step further.",
+	"history_2008_description": "In 2008, we brought the company Vetter Gardinen Gmbh into our fold, whose main area is in the Weissware and printing as well. In 2008, the company Ardison from Germany was also taken over.",
+	"history_current_title": "Nowadays",
+	"history_current_description": "thus we were able to further strengthen our products in the deco and uni sector.",
+	"nav_home": "Home",
+	"nav_about": "About",
+	"nav_team": "Team",
+	"nav_contact": "Contact",
+	"legal_notice": "Legal Notice"
 }

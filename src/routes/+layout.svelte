@@ -9,6 +9,10 @@
 	// theme support
 	import { ModeWatcher } from 'mode-watcher';
 
+	// layout components
+	import Header from './(components)/header.svelte';
+	import Footer from './(components)/footer.svelte';
+
 	let { children } = $props();
 </script>
 
@@ -18,4 +22,8 @@
 
 <ModeWatcher defaultMode="dark" />
 
+<Header />
+
 {@render children()}
+
+<Footer />

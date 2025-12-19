@@ -1,4 +1,22 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from de!"
+	"hero_title": "Löscher Gardinen",
+	"hero_description": "Seit 1960 prägend in der Textilbranche",
+	"about_title": "Über uns",
+	"about_desciption": "Solide Preisgestaltung, zuverlässige Lieferbereitschaft und eine Vielfältige Kollektion brachte die Firma Löscher nicht nur zum Marktführer in Österreich, sondern sogar die internationale Auszeichnung \"international Trophy for Technologie\" ein.",
+	"history_1991_title": "Eine neue Generation übernimmt.",
+	"history_1991_description": "Mit Eintritt von Junior-Chef Günter Löscher im Jahre 1991 begann auch der Export in die benachbarten Länder zu steigen. Löscher Gardinen werden inzwischen weltweit exportiert und das Programm hat sich durch Innovation, Herausforderung und Kreativität sehr erweitert.",
+	"history_1997_title": "Der erste Schritt ins Ausland.",
+	"history_1997_description": "1997 wurde die Augsburger Gardinenfabrik Herzog übernommen. Dies stärkte uns im deutschen Markt und unsere Produktion in Jaquard wurden um ein vielfaches verstärkt.",
+	"history_1998_title": "Eine eigene Druckproduktion.",
+	"history_1998_description": "Übernahme der Firma Faber in Wien, eigene Druckproduktion.",
+	"history_2008_title": "Ein Schritt weiter.",
+	"history_2008_description": "2008 haben wir die Firma Vetter Gardinen Gmbh in unser Boot geholt, deren Schwerbereich in der Weissware und ebenfalls im Druck liegt. 2008 wurde auch die Firma Ardison aus Deutschland übernommen.",
+	"history_current_title": "Heute",
+	"history_current_description": "Somit konnten wir unser Programm im Deko und Uni Bereich noch mehr stärken.",
+	"nav_home": "Home",
+	"nav_about": "Über uns",
+	"nav_team": "Team",
+	"nav_contact": "Kontakt",
+	"legal_notice": "Impressum"
 }

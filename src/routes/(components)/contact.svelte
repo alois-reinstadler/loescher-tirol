@@ -6,8 +6,8 @@
 	import { Label } from '$lib/components/ui/label';
 </script>
 
-<section id="contact" class="relative text-foreground">
-	<div class="absolute inset-0 bg-muted">
+<section id="contact" class="relative border-t text-foreground">
+	<div class="absolute inset-0 -z-40 bg-muted">
 		<iframe
 			width="100%"
 			height="100%"

@@ -1,6 +1,8 @@
-<section class="bg-background py-16">
+<section class="py-16">
 	<div class="mx-auto max-w-5xl px-6">
-		<h2 class="text-center text-4xl font-medium lg:text-5xl">Unsere Partner vertrauen auf Qualität</h2>
+		<h2 class="text-center text-4xl font-medium lg:text-5xl">
+			Unsere Partner vertrauen auf Qualität
+		</h2>
 		<div
 			class="mx-auto mt-20 flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 sm:gap-y-12"
 		>

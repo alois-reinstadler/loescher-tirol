@@ -1,23 +1,25 @@
-<script lang="ts">
-	// import assets
-	// import '@fontsource-variable/geist';
-	// import '@fontsource-variable/geist-mono';
+<script module lang="ts">
+	const flakeCount = navigator.hardwareConcurrency < 4 ? 50 : 150;
+	const isWinter = ![11, 0, 1].includes(new Date().getMonth());
+	const loadSnow = () => import('$lib/components/snowfall').then((module) => module.Snowfall);
+</script>
 
+<script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 
-	// theme support
-	import { ModeWatcher } from 'mode-watcher';
+	// theme and i18n support
+	import { ModeWatcher, mode } from 'mode-watcher';
+	import { createTranslations, translations } from '$lib/hooks/i18n';
+	import { prefersReducedMotion } from '$lib/hooks/motion-preferences';
 
 	// layout components
 	import Header from './(components)/header.svelte';
 	import Footer from './(components)/footer.svelte';
 
-	import { Snowfall } from '$lib/components/snowfall';
-
 	let { children } = $props();
 
-	const isWinter = [11, 0, 1].includes(new Date().getMonth());
+	createTranslations({ translations, defaultLocale: 'de' });
 </script>
 
 <svelte:head>
@@ -26,16 +28,23 @@
 
 <ModeWatcher defaultMode="dark" />
 
-{#if isWinter}
-	<div class="fixed inset-0 -z-30">
-		<Snowfall
-			color="#ffffff"
-			snowflakeCount={200}
-			radius={[0.5, 3]}
-			speed={[1, 3]}
-			wind={[-0.5, 2]}
-		/>
-	</div>
+<!-- if it's winter, show snow -->
+{#if isWinter && !prefersReducedMotion.current}
+	{#await loadSnow()}
+		<!-- empty block / do nothing -->
+	{:then Snowfall}
+		<div class="fixed inset-0 -z-30">
+			<Snowfall
+				color={mode.current === 'dark' ? '#ffffff' : '#000000'}
+				snowflakeCount={flakeCount}
+				radius={[0.5, 3]}
+				speed={[1, 3]}
+				wind={[-0.5, 2]}
+			/>
+		</div>
+	{:catch err}
+		<!-- empty block / do nothing -->
+	{/await}
 {/if}
 
 <Header />

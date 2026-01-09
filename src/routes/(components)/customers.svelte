@@ -1,3 +1,12 @@
+<script>
+	import LogoLutz from '$lib/assets/customers/xxxlutz.svg';
+	import LogoMoebelix from '$lib/assets/customers/moebelix.svg';
+	import LogoLesnina from '$lib/assets/customers/lesnina.svg';
+	import LogoMoemax from '$lib/assets/customers/moemax.svg';
+	import LogoTedox from '$lib/assets/customers/tedox.svg';
+	import LogoRS from '$lib/assets/customers/rs-moebel.svg';
+</script>
+
 <section class="py-16">
 	<div class="mx-auto max-w-5xl px-6">
 		<h2 class="text-center text-4xl font-medium lg:text-5xl">
@@ -6,83 +15,69 @@
 		<div
 			class="mx-auto mt-20 flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 sm:gap-y-12"
 		>
-			<img
-				class="h-5 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/nvidia.svg"
-				alt="Nvidia Logo"
-				height="20"
-				width="auto"
-			/>
-			<img
-				class="h-4 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/column.svg"
-				alt="Column Logo"
-				height="16"
-				width="auto"
-			/>
-			<img
-				class="h-4 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/github.svg"
-				alt="GitHub Logo"
-				height="16"
-				width="auto"
-			/>
-			<img
-				class="h-5 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/nike.svg"
-				alt="Nike Logo"
-				height="20"
-				width="auto"
-			/>
-			<img
-				class="h-4 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/laravel.svg"
-				alt="Laravel Logo"
-				height="16"
-				width="auto"
-			/>
-			<img
-				class="h-7 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/lilly.svg"
-				alt="Lilly Logo"
-				height="28"
-				width="auto"
-			/>
-			<img
-				class="h-5 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-				alt="Lemon Squeezy Logo"
-				height="20"
-				width="auto"
-			/>
-			<img
-				class="h-6 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/openai.svg"
-				alt="OpenAI Logo"
-				height="24"
-				width="auto"
-			/>
-			<img
-				class="h-4 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/tailwindcss.svg"
-				alt="Tailwind CSS Logo"
-				height="16"
-				width="auto"
-			/>
-			<img
-				class="h-5 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/vercel.svg"
-				alt="Vercel Logo"
-				height="20"
-				width="auto"
-			/>
-			<img
-				class="h-5 w-fit dark:invert"
-				src="https://html.tailus.io/blocks/customers/zapier.svg"
-				alt="Zapier Logo"
-				height="20"
-				width="auto"
-			/>
+			<img class="h-10 w-fit" src={LogoLutz} alt="XXXLutz Logo" />
+			<img class="h-8 w-fit dark:brightness-200" src={LogoMoebelix} alt="Möbelix Logo" />
+			<img class="h-12 w-fit" src={LogoLesnina} alt="Lesnina Logo" />
+			<img class="h-10 w-fit" src={LogoMoemax} alt="Mömax Logo" />
+			<svg
+				class="h-12 w-fit"
+				version="1.1"
+				viewBox="0 0 560.0387 172.23199"
+				xml:space="preserve"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<clipPath id="clipPath916">
+						<path d="M 0,129.174 H 420.029 V 0 H 0 Z" />
+					</clipPath>
+				</defs>
+				<g transform="matrix(1.3333 0 0 -1.3333 0 172.23)">
+					<g clip-path="url(#clipPath916)">
+						<g transform="translate(420.03 119.29)">
+							<path
+								d="m0 0c-0.24-13.858-39.461-30.733-39.197-54.547 0.261-23.151 37.927-35.734 39.166-53.567 0.396-5.102-4.006-10.796-10.256-10.999-15.197-0.682-32.129 52.287-54.199 44.67-20.469-7.063-33.715-43.193-51.635-44.827-5.613-0.407-9.916 5.182-9.68 10.918 0.725 17.607 42.346 28.953 42.168 53.81-0.168 23.764-43.221 39.926-42.648 55.465 0.189 5.094 3.191 7.972 8.006 8.595 21.238 2.75 34.041-45.978 56.205-45.033 19.236 0.818 33.869 44.769 51.527 45.391 5.334 0.188 10.66-3.211 10.543-9.876"
+								fill="#ec008c"
+							/>
+						</g>
+						<g transform="translate(28.336 90.663)">
+							<path
+								d="m0 0v-9.646h0.241c4.46 7.477 10.853 11.456 19.775 11.456 7.598 0 13.626-3.498 16.4-10.731 4.219 6.631 11.095 10.731 19.053 10.731 12.419 0 18.328-6.391 18.328-17.727v-25.683c0-3.377 0.845-5.188 4.34-5.188h4.099v-9.645h-34.607v9.645h1.81c3.496 0 4.339 1.811 4.339 5.188v22.186c0 4.221-2.048 10.371-7.594 10.371-6.512 0-8.683-3.737-8.683-9.044v-25.925c0-2.291 0.603-2.776 4.341-2.776h1.568v-9.645h-31.954v9.645h1.687c3.496 0 4.341 1.45 4.341 5.188v22.186c0 6.031-0.724 10.371-7.597 10.371-6.512 0-8.683-5.184-8.683-10.852v-24.117c0-1.691 0.846-2.776 4.342-2.776h1.929v-9.645h-35.811v9.645h5.182c3.498 0 4.342 1.811 4.342 5.188v26.768c0 3.378-0.844 5.186-4.342 5.186h-4.821v9.646z"
+								fill="var(--foreground)"
+							/>
+						</g>
+						<g transform="translate(164.95 109.72)">
+							<path
+								d="m0 0c0-5.305-4.22-9.525-9.526-9.525-5.305 0-9.525 4.22-9.525 9.525 0 5.186 4.22 9.526 9.525 9.526 5.306 0 9.526-4.34 9.526-9.526m-32.678-47.269c0-14.23 2.532-20.376 9.767-20.376 7.236 0 9.768 6.146 9.768 20.376s-2.532 20.379-9.768 20.379c-7.235 0-9.767-6.149-9.767-20.379m6.151 47.269c0-5.305-4.22-9.525-9.526-9.525-5.307 0-9.526 4.22-9.526 9.525 0 5.186 4.219 9.526 9.526 9.526 5.306 0 9.526-4.34 9.526-9.526m34.726-47.269c0-19.291-13.142-30.023-31.11-30.023-17.966 0-31.11 10.732-31.11 30.023 0 19.295 13.144 30.026 31.11 30.026 17.968 0 31.11-10.731 31.11-30.026"
+								fill="var(--foreground)"
+							/>
+						</g>
+						<g transform="translate(201.98 90.663)">
+							<path
+								d="m0 0v-9.646h0.239c4.463 7.477 10.854 11.456 19.778 11.456 7.597 0 13.625-3.498 16.4-10.731 4.217 6.631 11.09 10.731 19.051 10.731 12.42 0 18.326-6.391 18.326-17.727v-25.683c0-3.377 0.846-5.188 4.342-5.188h4.101v-9.645h-34.607v9.645h1.809c3.496 0 4.339 1.811 4.339 5.188v22.186c0 4.221-2.048 10.371-7.597 10.371-6.51 0-8.68-3.737-8.68-9.044v-25.925c0-2.291 0.602-2.776 4.342-2.776h1.564v-9.645h-31.955v9.645h1.692c3.494 0 4.339 1.45 4.339 5.188v22.186c0 6.031-0.724 10.371-7.597 10.371-6.512 0-8.683-5.184-8.683-10.852v-24.117c0-1.691 0.846-2.776 4.342-2.776h1.931v-9.645h-35.816v9.645h5.188c3.496 0 4.339 1.811 4.339 5.188v26.768c0 3.378-0.843 5.186-4.339 5.186h-4.826v9.646z"
+								fill="var(--foreground)"
+							/>
+						</g>
+						<g transform="translate(321.23 62.086)">
+							<path
+								d="m0 0c-5.789-3.377-15.557-4.1-15.557-11.575 0-4.945 3.137-6.755 6.875-6.755 6.871 0 8.682 5.064 8.682 10.131zm32.918-7.234v-6.635c0-12.057-4.58-15.794-17.965-15.794-5.789 0-11.457 2.772-13.387 8.562-4.943-5.912-10.73-8.562-18.57-8.562-11.451 0-18.568 4.46-18.568 16.762 0 22.788 35.812 9.403 35.812 25.2 0 7.958-5.066 10.612-11.695 10.612-3.256 0-6.633-0.483-9.525-2.293v-0.239c3.617-0.483 7.595-2.413 7.595-6.634 0-5.305-4.703-7.597-9.527-7.597-5.666 0-10.488 3.256-10.488 8.923 0 13.387 18.207 15.315 27.974 15.315 16.518 0 25.442-3.859 25.442-21.463v-22.428c0-3.499 0.365-4.825 2.291-4.825 2.654 0 3.98 1.568 3.98 8.319v2.777z"
+								fill="var(--foreground)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+			<!-- need finetune -->
+			<img class="h-14 w-fit" src={LogoTedox} alt="Tedox Logo" />
+			<!-- needs finetune -->
+			<img class="h-10 w-fit" src={LogoRS} alt="RS Möbel Logo" />
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-fit" viewBox="0 0 105 72"
+				><g fill="none" fill-rule="evenodd"
+					><path fill="var(--foreground)" d="M0 72h105V0H0z" /><path
+						fill="var(--background)"
+						d="m40.286 55.962-5.026-.747v-9.491c0-3.305.963-18.129 4.813-18.129 1.816 0 3.953 1.813 6.2 1.813 6.306 0 9.727-4.266 9.727-9.705C56 14.373 52.58 10 46.272 10c-7.698 0-10.797 8.637-13.684 14.289h-.213C32.053 19.276 30.13 14.69 27.564 10L8 16.078v6.185c5.559 0 7.804 2.346 7.804 11.09v21.862l-5.025.747V63h29.507zM81.445 10c-10.75 0-23.757 3.381-23.757 18.388 0 19.76 25.799 14.583 25.799 23.249 0 3.592-3.763 5.389-6.988 5.389-.966 0-3.546-.211-3.87-1.374-1.182-4.438-2.686-10.462-9.674-10.462-4.515 0-7.955 3.7-7.955 8.137C55 63.154 67.684 64 74.242 64 84.992 64 98 60.196 98 44.979c0-20.29-25.8-14.584-25.8-22.616 0-4.226 3.87-5.389 6.773-5.389.859 4.65 4.3 9.406 9.136 9.406 3.978 0 7.74-2.114 7.74-6.447 0-7.08-6.128-9.933-14.404-9.933"
+					/></g
+				></svg
+			>
 		</div>
 	</div>
 </section>

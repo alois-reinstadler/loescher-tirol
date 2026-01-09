@@ -1,19 +1,49 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { m } from '$lib/paraglide/messages.js';
-	import { Silk } from '$lib/components/silk';
+	import { useTranslations } from '$lib/hooks/i18n';
 
 	import { mode } from 'mode-watcher';
 
+	const i18n = useTranslations();
+
 	let color = $derived(mode.current === 'light' ? '#FFFFFF' : '#3a3540');
+
+	function shouldLoadScene() {
+		// Check WebGL support
+		const canvas = document.createElement('canvas');
+		const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+		if (!gl) return false;
+
+		// Check user motion preference
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		if (prefersReducedMotion) return false;
+
+		// Check device performance
+		const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+			navigator.userAgent
+		);
+		const isLowEndDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4;
+
+		if (isMobile || isLowEndDevice) return false;
+
+		return true;
+	}
+
+	const loadScene = () => import('$lib/components/silk').then((module) => module.Silk);
 </script>
 
 <section class="relative grid h-svh w-full place-items-center overflow-hidden">
-	<!-- Silk shader background -->
-	<div class="absolute inset-0 -z-50">
-		<Silk speed={3} scale={0.8} {color} noiseIntensity={1.2} rotation={0.2} />
-	</div>
-
+	{#if shouldLoadScene()}
+		{#await loadScene()}
+			<!-- empty block / do nothing -->
+		{:then Silk}
+			<div class="pointer-events-none absolute inset-0 -z-50">
+				<Silk speed={10} scale={1} {color} noiseIntensity={1.2} rotation={0.2} />
+			</div>
+		{:catch err}
+			<!-- empty block / do nothing -->
+		{/await}
+	{/if}
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 1440 320"
@@ -39,19 +69,22 @@
 		<div class="mx-auto max-w-7xl px-6">
 			<div class="text-center sm:mx-auto lg:mt-0 lg:mr-auto">
 				<h1 class="mt-8 text-6xl font-bold text-balance md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-					{m.hero_title()}
+					{i18n.t('hero_title')}
 				</h1>
 				<p class="mx-auto mt-8 max-w-2xl text-lg text-balance">
-					Qualität, Innovation und Tradition vereint. Ihr Partner für hochwertige Gardinen und
-					textile Raumlösungen aus Tirol — weltweit geschätzt seit über 60 Jahren.
+					{i18n.t('hero_description')}
 				</p>
 				<div class="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
 					<div
 						class="border bg-foreground/10 p-0.5"
 						style="border-radius: calc(0.5rem + 0.125rem + 4px);"
 					>
-						<Button href="#contact" size="lg" class="rounded-xl px-5 text-base">
-							<span class="text-nowrap">Kontaktieren Sie uns</span>
+						<Button
+							href={String(i18n.t('hero_button_href'))}
+							size="lg"
+							class="rounded-xl px-5 text-base"
+						>
+							<span class="text-nowrap">{i18n.t('hero_button_text')}</span>
 						</Button>
 					</div>
 				</div>

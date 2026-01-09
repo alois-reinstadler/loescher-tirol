@@ -2,9 +2,6 @@
 	import logo from '$lib/assets/logo.png';
 	import { site, type NavItem } from '$lib/config';
 
-	import { getLocale, locales, localizeHref, type Locale } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
-
 	import { toggleMode } from 'mode-watcher';
 
 	import LanguageIcon from '@tabler/icons-svelte/icons/language';
@@ -17,27 +14,25 @@
 
 	import I18nDE from '$lib/assets/i18n_de.svg';
 	import I18nEN from '$lib/assets/i18n_en.svg';
-	import { page } from '$app/state';
 
-	const links: NavItem[] = [
-		{
-			label: m.nav_home(),
-			href: '#'
-		},
-		{
-			label: m.nav_about(),
-			href: '#'
-		},
+	import { useTranslations, locales, type Locale } from '$lib/hooks/i18n';
 
+	const { setLocale, t } = useTranslations();
+
+	let links = $derived([
 		{
-			label: m.nav_team(),
-			href: '#'
+			label: t('label_home'),
+			href: '#home'
 		},
 		{
-			label: m.nav_contact(),
-			href: '#'
+			label: t('label_about'),
+			href: '#about'
+		},
+		{
+			label: t('label_contact'),
+			href: '#contact'
 		}
-	];
+	]);
 
 	// Locale configuration
 	const localeIcons: Record<Locale, string> = {
@@ -49,14 +44,6 @@
 		de: 'Deutsch',
 		en: 'English'
 	};
-
-	function handleLocaleChange(locale: Locale) {
-		// Use localizeHref to get the correct URL for the target locale
-		// This will return '/' for German (base locale) and '/en/...' for English
-		const localizedPath = localizeHref(page.url.pathname, { locale });
-		// Navigate to the localized URL (triggers full page reload for locale change)
-		window.location.href = localizedPath;
-	}
 </script>
 
 <header
@@ -109,7 +96,7 @@
 									{...props}
 									variant="ghost"
 									class="flex w-full items-center justify-start"
-									onclick={() => handleLocaleChange(locale)}
+									onclick={() => setLocale(locale)}
 								>
 									<img src={localeIcons[locale]} alt={locale} class="size-4" />
 									<span class="ml-1">

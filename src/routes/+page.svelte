@@ -3,8 +3,6 @@
 	import Testimonials from './(components)/testimonials.svelte';
 	import Customers from './(components)/customers.svelte';
 	import History from './(components)/history.svelte';
-	import Team from './(components)/team.svelte';
-	import Representatives from './(components)/representatives.svelte';
 	import Contact from './(components)/contact.svelte';
 </script>
 
@@ -12,6 +10,6 @@
 <Testimonials />
 <Customers />
 <History />
-<Team />
-<Representatives />
+<!-- <Team /> -->
+<!-- <Representatives /> -->
 <Contact />

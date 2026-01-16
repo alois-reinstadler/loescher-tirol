@@ -239,48 +239,49 @@ export const translations: Translations = {
 		testimonials_description: 'Was unsere Kunden sagen',
 
 		// quote 01 keys
-		quote_01_author: 'John Doe',
-		quote_01_role: 'Geschäftsführer',
+		quote_01_author: 'Maria K.',
+		quote_01_role: 'Inhaberin eines Einrichtungshauses',
 		quote_01_text:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'Seit über 15 Jahren beziehen wir unsere Gardinen von Löscher - und wurden noch nie enttäuscht. Die Qualität ist konstant hochwertig, die Lieferzeiten werden eingehalten, und bei Sonderwünschen findet das Team immer eine Lösung. Ein Partner, auf den man sich verlassen kann.',
 
 		// quote 02 keys
-		quote_02_author: 'Jane Doe',
-		quote_02_role: 'Technische Leitung',
+		quote_02_author: 'Thomas R.',
+		quote_02_role: 'Einkaufsleiter einer Hotelgruppe',
 		quote_02_text:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'Für unsere Hotelzimmer war uns eines besonders wichtig: Textilien, die sowohl optisch überzeugen als auch den täglichen Anforderungen standhalten. Mit Löscher haben wir genau das gefunden. Die Stoffe sind langlebig, pflegeleicht und verleihen unseren Räumen eine elegante Atmosphäre.',
 
 		// quote 03 keys
-		quote_03_author: 'Jim Beam',
-		quote_03_role: 'Finanzleiter',
+		quote_03_author: 'Stefan M.',
+		quote_03_role: 'Raumausstatter',
 		quote_03_text:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'Als Raumausstatter schätze ich Lieferanten, die ihr Handwerk verstehen. Löscher verbindet traditionelle Fertigungskunst mit zeitgemäßen Designs. Die Auswahl ist vielfältig, die Beratung kompetent - und meine Kunden sind jedes Mal begeistert.',
 
 		// quote 04 keys
-		quote_04_author: 'John Doe',
-		quote_04_role: 'Geschäftsführer',
+		quote_04_author: 'Christine L.',
+		quote_04_role: 'Geschäftsführerin eines Textilgroßhandels',
 		quote_04_text:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'Was mich an der Zusammenarbeit mit Löscher besonders überzeugt, ist der persönliche Kontakt. Man fühlt sich nicht wie eine Kundennummer, sondern wie ein geschätzter Partner. Das macht in unserer Branche einen echten Unterschied.',
 
 		// customers keys
 		customers_title: 'Kunden',
 		customers_description: 'Unsere Kunden',
 
 		// history keys
-		history_1991_title: 'Eine neue Generation übernimmt.',
+		history_1991_title: 'Eine neue Generation übernimmt',
 		history_1991_description:
-			'Mit dem Eintritt von Junior-Chef Günter Löscher im Jahr 1991 begann auch der Export in die Nachbarländer zu steigen. Löscher Gardinen werden inzwischen weltweit exportiert und das Programm wurde durch Innovation, Herausforderung und Kreativität erweitert.',
-		history_1997_title: 'Der erste Schritt ins Ausland.',
+			'Mit dem Eintritt von Junior-Chef Günter Löscher im Jahr 1991 begann ein neues Kapitel in der Unternehmensgeschichte. Unter seiner Führung öffneten sich die Türen zu den europäischen Nachbarländern, und der Export gewann zunehmend an Bedeutung. Was einst als regionales Unternehmen begann, entwickelte sich zu einem international tätigen Hersteller. Heute werden Löscher Gardinen in zahlreiche Länder weltweit exportiert. Das Sortiment wuchs stetig – getragen von einem Geist der Innovation, dem Mut zur Herausforderung und einer unermüdlichen Kreativität, die das Unternehmen bis heute prägt.',
+		history_1997_title: 'Der erste Schritt ins Ausland',
 		history_1997_description:
-			'1997 erfolgte die Übernahme der Augsburger Gardinenfabrik Herzog. Dadurch wurden wir im deutschen Markt gestärkt und unsere Jacquard-Produktion konnte um ein Vielfaches gesteigert werden.',
-		history_1998_title: 'Eigene Druckproduktion.',
-		history_1998_description: 'Übernahme der Firma Faber in Wien, eigene Druckproduktion.',
-		history_2008_title: 'Ein Schritt weiter.',
+			'Das Jahr 1997 markierte einen bedeutenden Wendepunkt: Mit der Übernahme der traditionsreichen Augsburger Gardinenfabrik Herzog setzte Löscher erstmals einen Fuß auf internationales Terrain. Diese strategische Erweiterung stärkte nicht nur die Position am deutschen Markt, sondern brachte auch wertvolles Know-how ins Unternehmen. Die Jacquard-Produktion konnte in der Folge um ein Vielfaches gesteigert werden – ein entscheidender Schritt, um den wachsenden Ansprüchen der Kunden gerecht zu werden.',
+		history_1998_title: 'Eigene Druckproduktion',
+		history_1998_description:
+			'Nur ein Jahr später folgte der nächste Meilenstein: Mit der Übernahme der Firma Faber in Wien erweiterte Löscher seine Fertigungstiefe um einen wesentlichen Bereich. Die eigene Druckproduktion ermöglichte es fortan, Designs und Muster inhouse zu realisieren - ein Gewinn an Flexibilität, Qualitätskontrolle und kreativer Freiheit.',
+		history_2008_title: 'Ein Schritt weiter',
 		history_2008_description:
-			'2008 nahmen wir die Firma Vetter Gardinen GmbH in unsere Gruppe auf, deren Hauptgebiet ebenfalls die Weißware und der Druck sind. Ebenfalls 2008 wurde die Firma Ardison aus Deutschland übernommen.',
-		history_current_title: 'Heutzutage',
+			'Das Jahr 2008 stand ganz im Zeichen des Wachstums. Mit der Aufnahme der Firma Vetter Gardinen GmbH in die Unternehmensgruppe wurden die Kompetenzen im Bereich Weißware und Druck weiter ausgebaut. Im selben Jahr erfolgte zudem die Übernahme der deutschen Firma Ardison. Beide Akquisitionen festigten die Marktstellung und erweiterten das Leistungsspektrum nachhaltig.',
+		history_current_title: 'Heute',
 		history_current_description:
-			'Dadurch konnten wir unsere Produkte im Deko- und Uni-Sektor weiter stärken.',
+			'Durch diese konsequente Entwicklung konnte Löscher sein Produktportfolio im Deko- und Uni-Sektor nachhaltig stärken. Was vor Jahrzehnten mit einer Vision begann, ist heute ein Unternehmen mit internationaler Reichweite, tief verwurzelt in Tradition und gleichzeitig offen für die Zukunft.',
 
 		// contact keys
 		contact_title: 'Kontakt',
